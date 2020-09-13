@@ -1,0 +1,46 @@
+body{
+      display: flex;
+      margin:0;
+      flex-direction: column;
+      min-height:100vh;
+}
+main{
+      display: flex;
+      flex-basis: 800px;
+}
+article{
+      flex: 4 0 60%;
+      background-color: red;
+
+}
+nav{
+      flex:1 1 20%;
+      background-color: teal;
+      order:-1;
+
+}
+aside{
+      flex:1 1 20%;
+      background-color: yellow;
+}
+header{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+}
+
+header, footer{
+      background: blue;
+      flex-basis: 100px;
+
+}
+
+@media all and (max-width: 640px){
+      main{
+            flex-direction: column;
+            flex-grow:1;
+      }
+      nav{
+            order:0;
+      }
+}
