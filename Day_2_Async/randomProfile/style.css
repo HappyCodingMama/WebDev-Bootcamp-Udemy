@@ -84,8 +84,13 @@ text-transform: lowercase;
       text-transform: uppercase;
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 20px;
+      transition: background-color 0.5s;
 }
 
 .btn:hover{
       background-color: #3167b9;
+}
+
+.btn:active{
+      background-color: #154b9b;
 }
